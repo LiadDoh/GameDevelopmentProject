@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class PickUp : MonoBehaviour
 {
+    public AudioSource itemPicked;
+
     float throwForce = 600f;
     Vector3 objectPos;
     float distance;
@@ -47,6 +49,8 @@ public class PickUp : MonoBehaviour
     {
         if (distance <= distanceAlowed)
         {
+            if (!isHolding && itemPicked != null)
+                itemPicked.Play();
             isHolding = true;
             item.GetComponent<Rigidbody>().useGravity = false;
             item.GetComponent<Rigidbody>().detectCollisions = true;

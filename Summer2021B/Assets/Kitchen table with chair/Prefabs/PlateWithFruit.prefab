@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: -2355919346366061034}
   - component: {fileID: -6502346039005451882}
   - component: {fileID: 3166319423532948722}
+  - component: {fileID: 4354814282204060333}
   m_Layer: 0
   m_Name: PlateWithFruit
   m_TagString: Untagged
@@ -97,6 +98,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f1458f4a890e775479109aa00c916e94, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  itemPicked: {fileID: 0}
   distanceAlowed: 2
   canHold: 1
   item: {fileID: 1747830594442888}
@@ -132,3 +134,16 @@ MeshCollider:
   m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: 4300000, guid: cd5c017944fa8324387550344af1aa8f, type: 3}
+--- !u!114 &4354814282204060333
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1747830594442888}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1e6bcd26bc8b74e42ab91deec50a83fe, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  impactSound: {fileID: 0}
