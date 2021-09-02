@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -10,6 +11,7 @@ public class PlayerMovement : MonoBehaviour
     public Transform groundCheck;
     public float groundDistance = 0.4f;
     public float jumpHeight = 3f;
+    Camera cam;
 
     public LayerMask groundMask;
     bool isGrounded;
@@ -17,7 +19,7 @@ public class PlayerMovement : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-
+        cam = Camera.main;
     }
 
     // Update is called once per frame
@@ -39,5 +41,8 @@ public class PlayerMovement : MonoBehaviour
         }
         velocity.y += gravity * Time.deltaTime;
         controller.Move(velocity*Time.deltaTime);
+
+
     }
+
 }
