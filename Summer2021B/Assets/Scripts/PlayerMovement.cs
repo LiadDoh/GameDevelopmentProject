@@ -15,11 +15,14 @@ public class PlayerMovement : MonoBehaviour
 
     public LayerMask groundMask;
     bool isGrounded;
+    bool isStanding;
     Vector3 velocity;
+    private float originalHeight;
     // Start is called before the first frame update
     void Start()
     {
         cam = Camera.main;
+        originalHeight = controller.height;
     }
 
     // Update is called once per frame
@@ -41,6 +44,14 @@ public class PlayerMovement : MonoBehaviour
         }
         velocity.y += gravity * Time.deltaTime;
         controller.Move(velocity*Time.deltaTime);
+
+        if (Input.GetKey("c") && isGrounded)
+        {
+            controller.height = 0.5f;
+        }else
+        {
+            controller.height = originalHeight;
+        }
 
 
     }

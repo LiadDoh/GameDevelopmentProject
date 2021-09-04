@@ -707,7 +707,8 @@ PrefabInstance:
       propertyPath: impactSound
       value: 
       objectReference: {fileID: 7978786484430538484}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: -8774071653136498558, guid: 8abce429b9303e14bbc71a3cb6c5cc25, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 8abce429b9303e14bbc71a3cb6c5cc25, type: 3}
 --- !u!1 &87975917243769929 stripped
 GameObject:
@@ -781,7 +782,8 @@ PrefabInstance:
       propertyPath: impactSound
       value: 
       objectReference: {fileID: 7978786484430538484}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 2543574977499861214, guid: c6b698bafc4b05c43a452c3d6dfeb206, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: c6b698bafc4b05c43a452c3d6dfeb206, type: 3}
 --- !u!4 &2746939928431033843 stripped
 Transform:
@@ -859,7 +861,8 @@ PrefabInstance:
       propertyPath: impactSound
       value: 
       objectReference: {fileID: 7978786484430538484}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 2543574977499861214, guid: c6b698bafc4b05c43a452c3d6dfeb206, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: c6b698bafc4b05c43a452c3d6dfeb206, type: 3}
 --- !u!4 &3516730477769203929 stripped
 Transform:
@@ -890,7 +893,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4598119376000420, guid: 49f1b2a095d7cc74e8dd6f00fefa1e9c, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0.02
+      value: 0.078
       objectReference: {fileID: 0}
     - target: {fileID: 4598119376000420, guid: 49f1b2a095d7cc74e8dd6f00fefa1e9c, type: 3}
       propertyPath: m_LocalPosition.y
@@ -898,7 +901,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4598119376000420, guid: 49f1b2a095d7cc74e8dd6f00fefa1e9c, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0.97
+      value: 0.934
       objectReference: {fileID: 0}
     - target: {fileID: 4598119376000420, guid: 49f1b2a095d7cc74e8dd6f00fefa1e9c, type: 3}
       propertyPath: m_LocalRotation.w
@@ -933,7 +936,8 @@ PrefabInstance:
       propertyPath: impactSound
       value: 
       objectReference: {fileID: 8902719077317603443}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: -2355919346366061034, guid: 49f1b2a095d7cc74e8dd6f00fefa1e9c, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 49f1b2a095d7cc74e8dd6f00fefa1e9c, type: 3}
 --- !u!4 &7124379522353656926 stripped
 Transform:
@@ -1007,7 +1011,8 @@ PrefabInstance:
       propertyPath: impactSound
       value: 
       objectReference: {fileID: 7978786484430538484}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 2543574977499861214, guid: c6b698bafc4b05c43a452c3d6dfeb206, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: c6b698bafc4b05c43a452c3d6dfeb206, type: 3}
 --- !u!4 &8074569496141502306 stripped
 Transform:
