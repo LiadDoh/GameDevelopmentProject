@@ -13,8 +13,14 @@ public class PickUp : MonoBehaviour
 
     public bool canHold = true;
     public GameObject item;
-    public GameObject tempParent;
+    private GameObject tempParent;
     public bool isHolding = false;
+
+    private void Start()
+    {
+        if (tempParent == null)
+            tempParent = GameObject.Find("Dest");
+    }
 
     private void Update()
     {
