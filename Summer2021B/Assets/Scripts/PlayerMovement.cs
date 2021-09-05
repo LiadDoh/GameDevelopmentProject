@@ -6,7 +6,10 @@ using UnityEngine;
 public class PlayerMovement : MonoBehaviour
 {
     public CharacterController controller;
-    public float speed = 12f;
+    public float speed;
+    private float walkSpeed = 7f;
+    private float crouchSpeed = 4f;
+    private float runSpeed = 12f;
     public float gravity = -9.81f;
     public Transform groundCheck;
     public float groundDistance = 0.4f;
@@ -21,6 +24,7 @@ public class PlayerMovement : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        speed = walkSpeed;
         cam = Camera.main;
         originalHeight = controller.height;
     }
@@ -45,11 +49,18 @@ public class PlayerMovement : MonoBehaviour
         velocity.y += gravity * Time.deltaTime;
         controller.Move(velocity*Time.deltaTime);
 
-        if (Input.GetKey("c") && isGrounded)
+        if (Input.GetKey(KeyCode.LeftControl) && isGrounded)
         {
+            speed = crouchSpeed;
             controller.height = 0.5f;
-        }else
+        }else if (Input.GetKey(KeyCode.LeftShift) && isGrounded)
         {
+            speed = runSpeed;
+            controller.height = originalHeight;
+        }
+        else
+        {
+            speed = walkSpeed;
             controller.height = originalHeight;
         }
 
