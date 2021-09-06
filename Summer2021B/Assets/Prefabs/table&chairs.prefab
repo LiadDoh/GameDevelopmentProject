@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   itemPicked: {fileID: 6524856650278787921}
-  distanceAlowed: 2
+  distanceAllowed: 2
   canHold: 1
   item: {fileID: 87975917243769929}
   isHolding: 0
@@ -30,7 +30,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   itemPicked: {fileID: 6524856650278787921}
-  distanceAlowed: 2
+  distanceAllowed: 2
   canHold: 1
   item: {fileID: 2744193136009811335}
   isHolding: 0
@@ -174,7 +174,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   itemPicked: {fileID: 6524856650278787921}
-  distanceAlowed: 2
+  distanceAllowed: 2
   canHold: 1
   item: {fileID: 3514969267699239085}
   isHolding: 0
@@ -318,7 +318,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   itemPicked: {fileID: 8928954728148518942}
-  distanceAlowed: 2
+  distanceAllowed: 2
   canHold: 1
   item: {fileID: 7118081315677402994}
   isHolding: 0
@@ -516,7 +516,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   itemPicked: {fileID: 6524856650278787921}
-  distanceAlowed: 2
+  distanceAllowed: 2
   canHold: 1
   item: {fileID: 8071823258357464854}
   isHolding: 0
@@ -658,6 +658,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: ClassicRoundTable1
       objectReference: {fileID: 0}
+    - target: {fileID: 1089266721439908, guid: 8abce429b9303e14bbc71a3cb6c5cc25, type: 3}
+      propertyPath: m_TagString
+      value: Carriable
+      objectReference: {fileID: 0}
     - target: {fileID: 4513903606458356, guid: 8abce429b9303e14bbc71a3cb6c5cc25, type: 3}
       propertyPath: m_RootOrder
       value: 0
@@ -733,6 +737,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: ClassicKitchenChair2 (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 1659199432490802, guid: c6b698bafc4b05c43a452c3d6dfeb206, type: 3}
+      propertyPath: m_TagString
+      value: Carriable
+      objectReference: {fileID: 0}
     - target: {fileID: 4406128822785862, guid: c6b698bafc4b05c43a452c3d6dfeb206, type: 3}
       propertyPath: m_RootOrder
       value: 4
@@ -807,6 +815,10 @@ PrefabInstance:
     - target: {fileID: 1659199432490802, guid: c6b698bafc4b05c43a452c3d6dfeb206, type: 3}
       propertyPath: m_Name
       value: ClassicKitchenChair2 (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1659199432490802, guid: c6b698bafc4b05c43a452c3d6dfeb206, type: 3}
+      propertyPath: m_TagString
+      value: Carriable
       objectReference: {fileID: 0}
     - target: {fileID: 1659199432490802, guid: c6b698bafc4b05c43a452c3d6dfeb206, type: 3}
       propertyPath: m_StaticEditorFlags
@@ -887,6 +899,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: PlateWithFruit
       objectReference: {fileID: 0}
+    - target: {fileID: 1747830594442888, guid: 49f1b2a095d7cc74e8dd6f00fefa1e9c, type: 3}
+      propertyPath: m_TagString
+      value: Carriable
+      objectReference: {fileID: 0}
     - target: {fileID: 4598119376000420, guid: 49f1b2a095d7cc74e8dd6f00fefa1e9c, type: 3}
       propertyPath: m_RootOrder
       value: 3
@@ -961,6 +977,10 @@ PrefabInstance:
     - target: {fileID: 1659199432490802, guid: c6b698bafc4b05c43a452c3d6dfeb206, type: 3}
       propertyPath: m_Name
       value: ClassicKitchenChair2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1659199432490802, guid: c6b698bafc4b05c43a452c3d6dfeb206, type: 3}
+      propertyPath: m_TagString
+      value: Carriable
       objectReference: {fileID: 0}
     - target: {fileID: 4406128822785862, guid: c6b698bafc4b05c43a452c3d6dfeb206, type: 3}
       propertyPath: m_RootOrder

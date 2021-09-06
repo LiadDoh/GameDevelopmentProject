@@ -144,7 +144,7 @@ GameObject:
   - component: {fileID: 3574595982673210836}
   m_Layer: 0
   m_Name: Mug
-  m_TagString: Untagged
+  m_TagString: Carriable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -225,7 +225,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   itemPicked: {fileID: 6462496948923362693}
-  distanceAlowed: 2
+  distanceAllowed: 2
   canHold: 1
   item: {fileID: 333012179049572575}
   isHolding: 0
@@ -560,7 +560,7 @@ GameObject:
   - component: {fileID: 4895604067839095098}
   m_Layer: 0
   m_Name: Mug (1)
-  m_TagString: Untagged
+  m_TagString: Carriable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -641,7 +641,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   itemPicked: {fileID: 6462496948923362693}
-  distanceAlowed: 2
+  distanceAllowed: 2
   canHold: 1
   item: {fileID: 1541703911485724562}
   isHolding: 0
