@@ -50,13 +50,13 @@ public class PickUp : MonoBehaviour
 
             if (Input.GetMouseButtonDown(1))
             {
-                item.GetComponent<Rigidbody>().AddForce(tempParent.transform.forward * throwForce);
+                item.GetComponent<Rigidbody>().AddForce(cam.forward * throwForce);
                 setDrop();
             }
         }
         else
         {
-            if (distanceFlag && (distance > distanceAllowed || !hit.collider.CompareTag("Carriable")))
+            if (distanceFlag && (distance > distanceAllowed || hit.collider == null || !hit.collider.CompareTag("Carriable")))
             {
                 text.text = "";
                 distanceFlag = false;
