@@ -6,6 +6,8 @@ public class DoorMotion : MonoBehaviour
 {
     private Animator animator;
     private AudioSource doorOpening;
+    private float time = 0;
+    private bool doorIsOpen = true;
 
     // Start is called before the first frame update
     void Start()
@@ -14,21 +16,39 @@ public class DoorMotion : MonoBehaviour
         doorOpening = GetComponent<AudioSource>();
     }
 
-    private void OnTriggerEnter(Collider other)
+    private IEnumerator OnTriggerEnter(Collider other)
     {
-        animator.SetBool("Open", true);
-        doorOpening.PlayDelayed(0.5f);
+        if (Time.time - time > 1 || time == 0)
+        {
+            setDoor(true);
+        } else
+        {
+            yield return new WaitForSeconds(1);
+            setDoor(true);
+        }
+
     }
 
-    private void OnTriggerExit(Collider other)
+    private IEnumerator OnTriggerExit(Collider other)
     {
-        animator.SetBool("Open", false);
-        doorOpening.PlayDelayed(0.5f);
+        if (Time.time - time > 1 || time == 0)
+        {
+            setDoor(false);
+        }
+        else
+        {
+            yield return new WaitForSeconds(1);
+            setDoor(false);
+        }
     }
 
-    // Update is called once per frame
-    void Update()
-    {
 
+
+    private void setDoor(bool isOpen)
+    {
+        animator.SetBool("Open", isOpen);
+        doorOpening.PlayDelayed(0.5f);
+        time = Time.time;
+        doorIsOpen = isOpen;
     }
 }
