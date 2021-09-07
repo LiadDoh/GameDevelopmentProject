@@ -8,7 +8,7 @@ public class PickUp : MonoBehaviour
     public AudioSource itemPicked;
 
     float throwForce = 600f;
-    Vector3 objectPos;
+    private Vector3 objectPos;
     float distance;
     public float distanceAllowed = 2f;
 
@@ -19,16 +19,14 @@ public class PickUp : MonoBehaviour
     public bool isHolding = false;
     private float timeAfterRelease = 0;
     private bool distanceFlag = false;
-   private Transform cam;
+    private Transform cam;
 
 
     private void Start()
     {
-        if (tempParent == null)
-            tempParent = GameObject.Find("Dest");
+        tempParent = GameObject.Find("Dest");
 
-        if (text == null)
-            text = GameObject.Find("Interactions").GetComponent<Text>();
+        text = GameObject.Find("Interactions").GetComponent<Text>();
 
        cam = Camera.main.transform;
     }
@@ -62,10 +60,10 @@ public class PickUp : MonoBehaviour
                 distanceFlag = false;
             }
             else if ((timeAfterRelease == 0 || Time.time - timeAfterRelease > 0.5) && distance <= distanceAllowed
-               && hit.collider.CompareTag("Carriable") &&
+               && hit.collider != null && hit.collider.CompareTag("Carriable") &&
                !text.text.Equals("Release left mouse button to drop item \nPress right mouse button to throw item"))
             {
-                text.text = "Press left mouse button to pick up item";
+                text.text = "Press left mouse button to interact";
                 distanceFlag = true;
             }
             objectPos = item.transform.position;

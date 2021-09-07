@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class OpenCloseDoor : MonoBehaviour
 {
@@ -9,12 +10,16 @@ public class OpenCloseDoor : MonoBehaviour
     public GameObject crossHair;
     public GameObject crossHairTouch;
     private Transform cam;
+    private Text text;
+
     // Start is called before the first frame update
     void Start()
     {
         animator = GetComponent<Animator>();
         isDoorOpen = 0;
         cam = Camera.main.transform;
+
+        text = GameObject.Find("Interactions").GetComponent<Text>();
     }
 
     // Update is called once per frame
@@ -26,7 +31,8 @@ public class OpenCloseDoor : MonoBehaviour
             if (hit.transform.gameObject == this.gameObject)
             {
                 idleCrossHair(false);
-                if (Input.GetKeyDown(KeyCode.E))
+                text.text = "Press left mouse button to interact";
+                if (Input.GetMouseButton(0))
                 {
                     if (isDoorOpen == 0)
                     {
@@ -47,6 +53,8 @@ public class OpenCloseDoor : MonoBehaviour
         else
         {
             idleCrossHair(true);
+            if (text.text.Equals("Press left mouse button to interact"))
+                text.text = "";
         }
     }
 
