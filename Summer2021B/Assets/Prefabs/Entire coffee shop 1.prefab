@@ -37651,6 +37651,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   crossHair: {fileID: 0}
   crossHairTouch: {fileID: 0}
+  distance: 3
+  variable: 
 --- !u!1 &5207388109131995963
 GameObject:
   m_ObjectHideFlags: 0
